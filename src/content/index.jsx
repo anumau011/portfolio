@@ -82,3 +82,40 @@ export const SERVICES = [
     desc: "Reviewing backend code for vulnerabilities, implementing JWT flows, and securing endpoints."
   }
 ];
+
+// src/content/index.jsx
+
+export const CODING_PROFILES = [
+  {
+    name: "LeetCode",
+    url: "https://leetcode.com/your_username", // REPLACE WITH YOUR URL
+    handle: "@anubhav_m", // REPLACE WITH YOUR HANDLE
+    color: "text-yellow-500", // LeetCode Orange/Yellow
+    bg: "hover:bg-yellow-500/10",
+    border: "group-hover:border-yellow-500/50"
+  },
+  {
+    name: "Codeforces",
+    url: "https://codeforces.com/profile/your_username",
+    handle: "Specialist", // REPLACE WITH YOUR RANK
+    color: "text-blue-500", // Codeforces Blue (or Red if you are Grandmaster!)
+    bg: "hover:bg-blue-500/10",
+    border: "group-hover:border-blue-500/50"
+  },
+  {
+    name: "CodeChef",
+    url: "https://www.codechef.com/users/your_username",
+    handle: "3 Star", 
+    color: "text-amber-700", // CodeChef Brown/Orange
+    bg: "hover:bg-amber-700/10",
+    border: "group-hover:border-amber-700/50"
+  },
+  {
+    name: "GitHub",
+    url: "https://github.com/your_username",
+    handle: "Commits+",
+    color: "text-slate-200", // GitHub White
+    bg: "hover:bg-slate-700/30",
+    border: "group-hover:border-slate-500/50"
+  }
+];
