@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, Terminal as TerminalIcon } from 'lucide-react';
+import { SiLeetcode, SiCodeforces, SiCodechef, SiGithub } from 'react-icons/si';
+import { CODING_PROFILES } from '../content';
 import Typewriter from './Typewriter';
 import Button from './Button';
 import profileImg from '../assets/img3.png';
@@ -44,11 +46,26 @@ const Hero = () => (
         </div>
 
         <div className="flex gap-6 mt-12">
-          {[Github, Linkedin, Mail].map((Icon, i) => (
-            <a key={i} href="#" className="text-slate-400 hover:text-cyan-400 transition-colors">
-              <Icon size={24} />
-            </a>
-          ))}
+          {CODING_PROFILES.map((profile) => {
+            const iconClass = "w-6 h-6";
+            let Icon = SiGithub;
+            if (profile.name === 'LeetCode') Icon = SiLeetcode;
+            if (profile.name === 'Codeforces') Icon = SiCodeforces;
+            if (profile.name === 'CodeChef') Icon = SiCodechef;
+
+            return (
+              <a
+                key={profile.name}
+                href={profile.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-cyan-400 transition-colors"
+                aria-label={profile.name}
+              >
+                <Icon className={iconClass} />
+              </a>
+            );
+          })}
         </div>
       </motion.div>
 

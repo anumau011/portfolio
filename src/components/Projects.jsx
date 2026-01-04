@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import SectionHeading from './SectionHeading';
-import { PROJECTS } from '../content';
+import { PROJECTS, CODING_PROFILES } from '../content';
 import { Github } from 'lucide-react';
 
 const Projects = () => (
@@ -21,7 +21,9 @@ const Projects = () => (
                   {project.tag}
                 </div>
                 <div className="flex gap-3">
-                  <Github size={18} className="text-slate-400 hover:text-white cursor-pointer" />
+                  <a href={(CODING_PROFILES.find(p => p.name === 'GitHub') || {}).url || '#'} target="_blank" rel="noopener noreferrer">
+                    <Github size={18} className="text-slate-400 hover:text-white cursor-pointer" />
+                  </a>
                 </div>
               </div>
 
