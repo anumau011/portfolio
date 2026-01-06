@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import SectionHeading from './SectionHeading';
 import Button from './Button';
 
@@ -26,9 +26,9 @@ const Contact = () => {
 
     try {
       await fetch("https://script.google.com/macros/s/AKfycbzbd1xqZMwlKXeargpftKCN8a_90fZ23jhVhtfzXiDjYKtb-MOdGiIG_DxIaOHgh1l1/exec", {
-  method: "POST",
-  body: JSON.stringify(form),
-  mode: "no-cors",
+        method: "POST",
+        body: JSON.stringify(form),
+        mode: "no-cors",
       });
 
       setSuccess(true);
