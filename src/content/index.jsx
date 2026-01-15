@@ -1,3 +1,4 @@
+import { u } from "framer-motion/client";
 import { Server, Database, Code, Terminal, Shield, Cpu, Globe, Zap } from "lucide-react";
 
 export const PROFILE = {
@@ -36,35 +37,40 @@ export const PROJECTS = [
     tag: "Security Focus",
     tech: ["Spring Boot", "React", "JWT", "RBAC"],
     desc: "A secure vault for sensitive data sharing.",
-    details: "Implemented strict Role-Based Access Control and Refresh Token rotation to prevent session hijacking. Focus on encryption and secure headers."
+    details: "Implemented strict Role-Based Access Control and Refresh Token rotation to prevent session hijacking. Focus on encryption and secure headers.",
+    url: "https://github.com/anumau011/FileShareApp"
   },
   {
-    title: "College ERP System",
+    title: "ProShop v2 E-commerce Platform",
     tag: "Large Scale",
     tech: ["MERN Stack", "Redux", "Chart.js"],
-    desc: "Comprehensive management system for educational institutions.",
-    details: "Digitized student attendance, grading, and fee management. Solved the problem of manual data redundancy and slow retrieval times."
+    desc: "Full-featured e-commerce site with admin dashboard.",
+    details: "Designed scalable RESTful APIs and optimized database queries to handle high traffic and large product catalogs efficiently.",
+    url: "https://github.com/anumau011/ProShop-v2"
   },
   {
-    title: "Teats (Native Food Discovery)",
+    title: "Wallet",
     tag: "Product",
-    tech: ["React Native", "Node.js", "Geolocation"],
-    desc: "A platform connecting users to local, native food vendors.",
-    details: "Built a location-based recommendation engine to solve the discoverability issue for small, unlisted food vendors."
+    tech: ["React Native", "Node.js", "Expo","prisma"],
+    desc: "Personal finance management mobile app.",
+    details: "Developed features for expense tracking, budgeting, and financial goal setting. Focused on user-friendly design and seamless data sync across devices.",
+    url: "https://github.com/anumau011/wallet"
   },
   {
-    title: "YouTube Automation Suite",
+    title: "DevRoadmap Website",
     tag: "Automation",
-    tech: ["Python", "YouTube API", "FFmpeg"],
-    desc: "Tools to automate video metadata and analytics tracking.",
-    details: "Reduced manual upload time by 70% by scripting thumbnail processing and tag generation automatically."
+    tech: ["Node.js", "Express", "Tailwindcss"],
+    desc: "Automated generation of developer roadmaps.",
+    details: "Built a backend service that scrapes and compiles learning paths for various developer roles, automating content updates and ensuring accuracy.",
+    url: "https://github.com/anumau011/DevRoadmap"
   },
   {
-    title: "Interactive Quiz App",
+    title: "AuthBasedTodo App",
     tag: "Full Stack",
-    tech: ["Java Spring Boot", "MySQL", "React"],
-    desc: "Real-time quiz platform with administrative dashboard.",
-    details: "Optimized database queries to handle concurrent user submissions without latency."
+    tech: ["MERN Stack", "JWT", "Bootstrap", "EJS"],
+    desc: "A todo app with user authentication and personalized task management.",
+    details: "Implemented secure user authentication using JWT and built RESTful APIs for task CRUD operations with proper validation and error handling.",
+    url: "https://github.com/anumau011/AuthBasedTodo"
   }
 ];
 

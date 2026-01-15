@@ -21,7 +21,7 @@ const Projects = () => (
                   {project.tag}
                 </div>
                 <div className="flex gap-3">
-                  <a href={(CODING_PROFILES.find(p => p.name === 'GitHub') || {}).url || '#'} target="_blank" rel="noopener noreferrer">
+                  <a href={project.url || '#'} target="_blank" rel="noopener noreferrer">
                     <Github size={18} className="text-slate-400 hover:text-white cursor-pointer" />
                   </a>
                 </div>
